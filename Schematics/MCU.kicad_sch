@@ -2980,6 +2980,358 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "NeoPixel_THT_1"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D5"
+				(at -11.43 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "ws2812b"
+				(at -11.43 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+				(at -61.976 5.588 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.adafruit.com/product/1938"
+				(at -64.008 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "RGB LED with integrated controller, 5mm/8mm LED package"
+				(at -37.338 8.382 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description_1" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MP" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Package" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Price" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Purchase-URL" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C114586"
+				(at -29.972 1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "RGB LED NeoPixel addressable"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED*D5.0mm* LED*D8.0mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "NeoPixel_THT_1_0_0"
+				(text "RGB"
+					(at 2.286 -4.191 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(symbol "NeoPixel_THT_1_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 13.97 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 1.778 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -3.556) (xy 1.778 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -3.556) (xy 2.667 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "NeoPixel_THT_1_1_1"
+				(pin power_in line
+					(at -7.62 -3.81 0)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 3.81 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 16.51 1.27 180)
+					(length 2.54)
+					(name "DIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 16.51 -2.54 180)
+					(length 2.54)
+					(name "DOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_Push_Dual"
 			(pin_names
 				(offset 1.016)
@@ -3682,6 +4034,18 @@
 		(uuid 77c327aa-5c3e-4a4b-ae9d-dc6970c98e88)
 	)
 	(rectangle
+		(start 15.24 153.67)
+		(end 87.63 179.07)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid a1b149df-fa99-48bb-8483-075accb65445)
+	)
+	(rectangle
 		(start 17.78 120.65)
 		(end 90.17 146.05)
 		(stroke
@@ -3900,8 +4264,12 @@
 		(uuid "705a3748-f70f-425a-b074-32d170471cb9")
 	)
 	(no_connect
-		(at 132.08 111.76)
-		(uuid "81b23424-8087-419c-bc82-68625306330c")
+		(at 172.72 83.82)
+		(uuid "84112130-fbf4-4450-94d2-4103b7367f38")
+	)
+	(no_connect
+		(at 172.72 137.16)
+		(uuid "9241dd9d-a11f-4643-938a-e0a9fd1fb6ca")
 	)
 	(no_connect
 		(at 38.1 132.08)
@@ -3912,12 +4280,20 @@
 		(uuid "98e665cb-96a5-4d1a-bc99-4830651a62ce")
 	)
 	(no_connect
+		(at 172.72 134.62)
+		(uuid "a2f837d0-3cb8-4c0a-ae4c-1fbf0516a4f7")
+	)
+	(no_connect
 		(at 172.72 78.74)
 		(uuid "a7641bc5-b0f3-4b7a-8212-3f7d70d66627")
 	)
 	(no_connect
 		(at 172.72 157.48)
 		(uuid "a909d0e5-0167-441a-9c89-3b9bc1caaf13")
+	)
+	(no_connect
+		(at 63.5 171.45)
+		(uuid "b0a45611-4b17-4f44-b3af-116f6cb9d02e")
 	)
 	(no_connect
 		(at 242.57 45.72)
@@ -3932,8 +4308,8 @@
 		(uuid "ce7a017b-8214-4291-8d55-a6a20caf9e9b")
 	)
 	(no_connect
-		(at 132.08 114.3)
-		(uuid "d5a5c45f-3d7d-419b-baf4-09e6d9c40097")
+		(at 172.72 127)
+		(uuid "d69e28f9-f312-4b96-bc47-96d6df3ee41b")
 	)
 	(no_connect
 		(at 48.26 55.88)
@@ -4017,16 +4393,6 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 137.16) (xy 172.72 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d556047-88e4-421c-83f1-defe0fb1610b")
-	)
-	(wire
-		(pts
 			(xy 156.21 22.86) (xy 162.56 22.86)
 		)
 		(stroke
@@ -4054,6 +4420,16 @@
 			(type default)
 		)
 		(uuid "17188f5a-c668-4da3-a51d-87b10170ce1b")
+	)
+	(wire
+		(pts
+			(xy 123.19 114.3) (xy 132.08 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17c614b0-7a98-4677-9124-4bcd18780727")
 	)
 	(wire
 		(pts
@@ -4167,6 +4543,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 111.76) (xy 132.08 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "383d40d0-e390-4eee-9c37-0da79bdb3c35")
+	)
+	(wire
+		(pts
 			(xy 29.21 124.46) (xy 29.21 128.27)
 		)
 		(stroke
@@ -4184,6 +4570,16 @@
 			(type default)
 		)
 		(uuid "39e13d04-bb9c-4a47-82d3-a30495e483a1")
+	)
+	(wire
+		(pts
+			(xy 30.48 172.72) (xy 39.37 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bb398f1-40b9-4bc9-9260-64647f8b5446")
 	)
 	(wire
 		(pts
@@ -4344,6 +4740,16 @@
 			(type default)
 		)
 		(uuid "6a74e2b3-e5c1-447e-b51c-2d950deac744")
+	)
+	(wire
+		(pts
+			(xy 34.29 157.48) (xy 50.8 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c5f0d8e-0163-4f88-8a3c-9d1107b249d5")
 	)
 	(wire
 		(pts
@@ -4567,6 +4973,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 157.48) (xy 50.8 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8be9b2a1-b2ae-4ecc-8856-2331c740bcea")
+	)
+	(wire
+		(pts
 			(xy 29.21 124.46) (xy 45.72 124.46)
 		)
 		(stroke
@@ -4587,16 +5003,6 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 83.82) (xy 172.72 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "90e8f7f2-ca20-4d0c-83c3-f4486171c593")
-	)
-	(wire
-		(pts
 			(xy 262.89 58.42) (xy 255.27 58.42)
 		)
 		(stroke
@@ -4604,16 +5010,6 @@
 			(type default)
 		)
 		(uuid "92cfb84c-406a-4f24-8b66-3efa05bc638b")
-	)
-	(wire
-		(pts
-			(xy 177.8 127) (xy 172.72 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9555f998-d070-4f2f-866d-0aa1f67f6d58")
 	)
 	(wire
 		(pts
@@ -4727,6 +5123,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 167.64) (xy 63.5 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a50f6e93-c0e6-48ef-82f8-ae9fccfdbde6")
+	)
+	(wire
+		(pts
 			(xy 154.94 170.18) (xy 154.94 165.1)
 		)
 		(stroke
@@ -4794,16 +5200,6 @@
 			(type default)
 		)
 		(uuid "ba94e3e3-12c7-4185-b5d3-8562e90cf1e2")
-	)
-	(wire
-		(pts
-			(xy 177.8 134.62) (xy 172.72 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bee71a11-1a9d-462f-b143-2e834fe4d32e")
 	)
 	(wire
 		(pts
@@ -4954,6 +5350,16 @@
 			(type default)
 		)
 		(uuid "ed15396c-8503-485d-98f9-6f40164fd255")
+	)
+	(wire
+		(pts
+			(xy 68.58 158.75) (xy 68.58 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1be5c59-1092-456e-9163-bcad6c44c6f3")
 	)
 	(wire
 		(pts
@@ -5115,6 +5521,16 @@
 		)
 		(uuid "beeeae6e-24e0-4129-9d2f-ff3ca3e8c32a")
 	)
+	(label "RGB_DATA"
+		(at 68.58 158.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d83a4a6a-d346-40ab-99b5-3c1a72039cb2")
+	)
 	(label "OSC OUT"
 		(at 128.27 88.9 180)
 		(effects
@@ -5190,17 +5606,6 @@
 		)
 		(uuid "1935c6f7-a068-4c7b-a4aa-fe22eb58bd20")
 	)
-	(hierarchical_label "CurrentADC"
-		(shape input)
-		(at 176.53 83.82 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1e0d9404-6328-43dc-be9e-56f79491e3d9")
-	)
 	(hierarchical_label "SPI2_SCK"
 		(shape input)
 		(at 177.8 144.78 0)
@@ -5223,16 +5628,16 @@
 		)
 		(uuid "534c54c7-3df5-4e77-b92c-c248b51cd07e")
 	)
-	(hierarchical_label "IMU_Interrutpt"
+	(hierarchical_label "CS_BARO"
 		(shape input)
-		(at 177.8 127 0)
+		(at 123.19 111.76 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "592b7b73-a398-4693-9b90-d331842e2284")
+		(uuid "66895e3b-9c5f-440e-86ba-750d0894eb4b")
 	)
 	(hierarchical_label "SPI1_MOSI"
 		(shape input)
@@ -5244,6 +5649,17 @@
 			(justify left)
 		)
 		(uuid "710ead71-1a7d-4a23-9c9f-d25751ac5fe6")
+	)
+	(hierarchical_label "CurrentCheck"
+		(shape input)
+		(at 123.19 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "847c9e5f-71c1-4a90-83ef-8cf87c92a2c6")
 	)
 	(hierarchical_label "VBUS"
 		(shape input)
@@ -5300,28 +5716,6 @@
 		)
 		(uuid "96b785af-d460-451e-bd6a-18a1a080cc2b")
 	)
-	(hierarchical_label "I2C_SDA"
-		(shape input)
-		(at 177.8 137.16 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9f5e67cb-e3ca-42f5-8d3a-8bd22fd26a92")
-	)
-	(hierarchical_label "I2C_SCL"
-		(shape input)
-		(at 177.8 134.62 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ac27d1a8-2cc6-4f82-a4cd-69bdb11fcec1")
-	)
 	(hierarchical_label "D+"
 		(shape input)
 		(at 177.8 106.68 0)
@@ -5365,6 +5759,181 @@
 			(justify left)
 		)
 		(uuid "f16184b4-b938-462c-a8ab-395749712ba8")
+	)
+	(symbol
+		(lib_name "NeoPixel_THT_1")
+		(lib_id "LED:NeoPixel_THT")
+		(at 46.99 168.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "02bcc89c-8c88-4d87-b670-e4afb2a03475")
+		(property "Reference" "D5"
+			(at 35.56 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ws2812b"
+			(at 35.56 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at -14.986 163.322 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.adafruit.com/product/1938"
+			(at -17.018 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller, 5mm/8mm LED package"
+			(at 9.652 160.528 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 46.99 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 46.99 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 46.99 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 46.99 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 46.99 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 46.99 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C114586"
+			(at 17.018 167.894 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 46.99 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 46.99 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 46.99 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 46.99 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "b6c27869-85ea-405c-9a89-e2d42c33ac39")
+		)
+		(pin "3"
+			(uuid "635dde5a-54fc-48af-be17-c6826d3e60ce")
+		)
+		(pin "1"
+			(uuid "71cfdf76-0ac0-4b4f-a793-fe61587d3bf6")
+		)
+		(pin "2"
+			(uuid "3b39b427-ea66-4ad7-903b-7bf9f22dca14")
+		)
+		(instances
+			(project "CAN-Interface-Board"
+				(path "/8a3e7f99-4046-40e8-bd7c-d9d1c8c7162e/a5486d6a-0def-49b5-badb-76c17f208987"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -5501,6 +6070,72 @@
 			(project "CAN-Interface-Board"
 				(path "/8a3e7f99-4046-40e8-bd7c-d9d1c8c7162e/a5486d6a-0def-49b5-badb-76c17f208987"
 					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 34.29 157.48 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0f48dd4a-bc14-4551-b34e-ddbb0c500a08")
+		(property "Reference" "#PWR02"
+			(at 38.1 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 30.48 157.4799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 34.29 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f3973fcb-84ed-4845-911c-c7ac952e93bd")
+		)
+		(instances
+			(project "CAN-Interface-Board"
+				(path "/8a3e7f99-4046-40e8-bd7c-d9d1c8c7162e/a5486d6a-0def-49b5-badb-76c17f208987"
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -8277,6 +8912,72 @@
 			(project "CAN-Interface-Board"
 				(path "/8a3e7f99-4046-40e8-bd7c-d9d1c8c7162e/a5486d6a-0def-49b5-badb-76c17f208987"
 					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 30.48 172.72 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "82fd277c-9bb6-4f90-8bac-b907e30cd545")
+		(property "Reference" "#PWR01"
+			(at 24.13 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 28.194 173.228 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 30.48 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "177751c8-0da2-4871-96b2-1230295f1d6d")
+		)
+		(instances
+			(project "CAN-Interface-Board"
+				(path "/8a3e7f99-4046-40e8-bd7c-d9d1c8c7162e/a5486d6a-0def-49b5-badb-76c17f208987"
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)

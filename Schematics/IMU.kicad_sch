@@ -870,6 +870,10 @@
 		(at 151.13 111.76)
 		(uuid "46f75c9c-e4d6-46fd-beb8-1b266f652261")
 	)
+	(no_connect
+		(at 125.73 107.95)
+		(uuid "5b62abf8-1aa0-4a78-a7fe-a35d144b4fa0")
+	)
 	(wire
 		(pts
 			(xy 142.24 97.79) (xy 142.24 82.55)
@@ -949,16 +953,6 @@
 			(type default)
 		)
 		(uuid "5e4cf21d-58a9-4670-b284-d64bdb3c9fd4")
-	)
-	(wire
-		(pts
-			(xy 115.57 107.95) (xy 125.73 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63a06f6c-bce0-45cc-9a83-38222de996b5")
 	)
 	(wire
 		(pts
@@ -1082,17 +1076,6 @@
 			(justify left)
 		)
 		(uuid "4d50567a-78f4-421f-b945-951e7eb4e130")
-	)
-	(hierarchical_label "IMU_DReady"
-		(shape input)
-		(at 115.57 107.95 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6221c65b-6995-4892-b352-34a550e9263f")
 	)
 	(hierarchical_label "IMU_MOSI"
 		(shape input)

@@ -5,6 +5,24 @@
 	(uuid "8a3e7f99-4046-40e8-bd7c-d9d1c8c7162e")
 	(paper "A4")
 	(lib_symbols)
+	(junction
+		(at 129.54 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "26629afa-20da-4e11-a2ed-7ec69adf8362")
+	)
+	(junction
+		(at 132.08 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2f3c9b3a-0b98-4743-be7c-c9f11846ac2f")
+	)
+	(junction
+		(at 128.27 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "30169991-1c74-40d0-86b8-9fbb2d80f558")
+	)
 	(wire
 		(pts
 			(xy 127 62.23) (xy 134.62 62.23)
@@ -17,17 +35,17 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 87.63) (xy 99.06 87.63)
+			(xy 129.54 140.97) (xy 123.19 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "07f5b3d5-99f2-47fd-9d06-82b854d3b9c1")
+		(uuid "0827c51c-e645-427a-9c71-f8787a95fcfd")
 	)
 	(wire
 		(pts
-			(xy 127 115.57) (xy 134.62 115.57)
+			(xy 127 115.57) (xy 128.27 115.57)
 		)
 		(stroke
 			(width 0)
@@ -37,23 +55,13 @@
 	)
 	(wire
 		(pts
-			(xy 127 120.65) (xy 134.62 120.65)
+			(xy 132.08 120.65) (xy 132.08 143.51)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0ceb81c7-e231-45d1-946b-e8941bdb526a")
-	)
-	(wire
-		(pts
-			(xy 127 135.89) (xy 134.62 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e324c28-28ca-4c69-94de-25af8296aa1d")
+		(uuid "1542f402-139f-4672-b844-db0e539fe414")
 	)
 	(wire
 		(pts
@@ -87,16 +95,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 107.95) (xy 181.61 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f44a712-6e99-4d4b-93ed-eca5261bd47f")
-	)
-	(wire
-		(pts
 			(xy 128.27 88.9) (xy 134.62 88.9)
 		)
 		(stroke
@@ -107,13 +105,43 @@
 	)
 	(wire
 		(pts
-			(xy 127 118.11) (xy 134.62 118.11)
+			(xy 128.27 115.57) (xy 134.62 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59dd7255-0b68-4735-a1e0-86f5eaaf301b")
+	)
+	(wire
+		(pts
+			(xy 127 118.11) (xy 129.54 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5a134893-9e29-4bd8-bb47-de024cd35190")
+	)
+	(wire
+		(pts
+			(xy 128.27 138.43) (xy 123.19 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68823cd3-0997-488a-96e4-c967416869b8")
+	)
+	(wire
+		(pts
+			(xy 132.08 143.51) (xy 123.19 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "703d3252-80ba-49f6-a604-8496725f0f6e")
 	)
 	(wire
 		(pts
@@ -127,6 +155,26 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 115.57) (xy 128.27 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "809058b4-bb78-489d-b9a3-59dacca87cf5")
+	)
+	(wire
+		(pts
+			(xy 128.27 93.98) (xy 134.62 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81718226-5ab1-43d6-807a-68381c265f1f")
+	)
+	(wire
+		(pts
 			(xy 128.27 78.74) (xy 134.62 78.74)
 		)
 		(stroke
@@ -137,13 +185,23 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 120.65) (xy 134.62 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96efc4ce-361f-4318-b0dd-2ce9f1c541e8")
+	)
+	(wire
+		(pts
 			(xy 128.27 86.36) (xy 134.62 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a1cb3a71-c020-404e-b2c8-adbd2df52789")
+		(uuid "a23a91a6-65c3-4f9a-ab2c-d67c0a03ccca")
 	)
 	(wire
 		(pts
@@ -157,23 +215,13 @@
 	)
 	(wire
 		(pts
-			(xy 127 138.43) (xy 134.62 138.43)
+			(xy 129.54 118.11) (xy 129.54 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bb3adb92-dec8-4e17-a226-9311131bbc84")
-	)
-	(wire
-		(pts
-			(xy 127 113.03) (xy 134.62 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1198d48-7c27-4053-a6ca-a0f06a7080de")
+		(uuid "b821d46b-a3c4-4308-ade4-3aaa4be11a06")
 	)
 	(wire
 		(pts
@@ -197,6 +245,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 120.65) (xy 132.08 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4ecf392-19d5-4ba2-8d7b-8d3b73948623")
+	)
+	(wire
+		(pts
 			(xy 170.18 127) (xy 181.61 127)
 		)
 		(stroke
@@ -207,6 +265,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 118.11) (xy 134.62 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e25cf4b5-e835-47c9-ada0-ee9e241c0806")
+	)
+	(wire
+		(pts
 			(xy 170.18 132.08) (xy 181.61 132.08)
 		)
 		(stroke
@@ -214,6 +282,16 @@
 			(type default)
 		)
 		(uuid "edd4fb09-f1da-4941-b96f-68de27e2e075")
+	)
+	(wire
+		(pts
+			(xy 123.19 134.62) (xy 134.62 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eefe2c1c-fc9c-42ba-9709-bf3c949705c9")
 	)
 	(wire
 		(pts
@@ -266,57 +344,6 @@
 		(uuid "68406aff-bf00-4ee3-ab28-ffc429ba41d2")
 	)
 	(sheet
-		(at 181.61 102.87)
-		(size 24.13 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "15bd7aa7-9f9b-43b9-8a5d-de3a8ae7f7af")
-		(property "Sheetname" "Current Sensor"
-			(at 181.102 102.362 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Current_Sensor.kicad_sch"
-			(at 181.61 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "VoltageADC" output
-			(at 181.61 107.95 180)
-			(uuid "9cb558d4-bed1-4170-8a1e-839815da933d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "CAN-Interface-Board"
-				(path "/8a3e7f99-4046-40e8-bd7c-d9d1c8c7162e"
-					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 105.41 107.95)
 		(size 21.59 17.78)
 		(exclude_from_sim no)
@@ -353,16 +380,6 @@
 		(pin "IMU_CS" input
 			(at 127 110.49 0)
 			(uuid "b9ed9759-44e9-451b-80fb-685c49add115")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "IMU_DReady" input
-			(at 127 113.03 0)
-			(uuid "5980f54b-6fe0-49ad-a372-71e021c4fe37")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -575,9 +592,19 @@
 				(justify left top)
 			)
 		)
+		(pin "Airbrakes_PWM" input
+			(at 128.27 76.2 0)
+			(uuid "2b067574-4bc6-48f5-8043-d97f5c1d44ad")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(pin "Limit_Switch_CAS" input
 			(at 128.27 78.74 0)
-			(uuid "b0769cb9-169c-4156-a447-d69c4499a74a")
+			(uuid "2cfbd851-3f92-4be0-99f2-66ed26caf767")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -587,7 +614,7 @@
 		)
 		(pin "Limit_Switch_Roll" input
 			(at 128.27 88.9 0)
-			(uuid "748f132d-d1c6-45f4-9334-64132b03a44a")
+			(uuid "a59ec73f-9ac1-43d4-b16e-13bd5688e256")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -595,9 +622,9 @@
 				(justify right)
 			)
 		)
-		(pin "Servo_Airbrakes" input
-			(at 128.27 76.2 0)
-			(uuid "c2494b7f-3e2f-4406-ad90-cf0a67a2a574")
+		(pin "powergood" input
+			(at 128.27 93.98 0)
+			(uuid "cc5196da-f5dd-4a9e-bb58-c6898d9a8732")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -605,9 +632,9 @@
 				(justify right)
 			)
 		)
-		(pin "Servo_RollControl" input
+		(pin "Roll_PWM" input
 			(at 128.27 86.36 0)
-			(uuid "930e2f19-d9cc-4f70-a7f2-69954f61f8e2")
+			(uuid "5ef7d3e3-dc55-4bef-a1fb-884c108ac9b2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -615,24 +642,14 @@
 				(justify right)
 			)
 		)
-		(pin "PWN_EN" input
+		(pin "vEnable" input
 			(at 128.27 97.79 0)
-			(uuid "d4c9f905-449b-4b91-84d0-2327837583d2")
+			(uuid "cd07c671-49d9-40cb-b7b9-0871073ab4d3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-		(pin "Servo5V" passive
-			(at 99.06 87.63 180)
-			(uuid "a4733797-3615-498b-b8c7-695dc6a2c371")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(instances
@@ -644,8 +661,8 @@
 		)
 	)
 	(sheet
-		(at 105.41 132.08)
-		(size 21.59 8.89)
+		(at 95.25 130.81)
+		(size 27.94 24.13)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -660,7 +677,7 @@
 		)
 		(uuid "a39ea6c8-c4df-4a74-9922-1f41a5f54a02")
 		(property "Sheetname" "Barometer"
-			(at 105.41 131.3684 0)
+			(at 95.25 130.0984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -669,7 +686,7 @@
 			)
 		)
 		(property "Sheetfile" "Barometer.kicad_sch"
-			(at 105.41 141.5546 0)
+			(at 95.25 155.5246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -677,9 +694,9 @@
 				(justify left top)
 			)
 		)
-		(pin "BarometerSDA" input
-			(at 127 135.89 0)
-			(uuid "b3db5f4e-5abf-4b03-9962-650078ab8aad")
+		(pin "Baraometer-ChipSelect" input
+			(at 123.19 134.62 0)
+			(uuid "527e089f-684d-4368-b17c-179f75f1f2fe")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -687,9 +704,29 @@
 				(justify right)
 			)
 		)
-		(pin "BarometerSCL" input
-			(at 127 138.43 0)
-			(uuid "b685ff57-6e09-4cf3-8d90-f8195460f444")
+		(pin "Baraometer-MISO" input
+			(at 123.19 138.43 0)
+			(uuid "9a44c0e5-5505-467d-b4a1-c7c09e1ace2d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Baraometer-MOSI" input
+			(at 123.19 140.97 0)
+			(uuid "329d381f-2589-44ed-a79c-f1a2bd60e452")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Baraometer-SCK" input
+			(at 123.19 143.51 0)
+			(uuid "5d69d2ee-5119-489e-8f1a-3ffa12cb22ca")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -809,36 +846,6 @@
 				(justify left)
 			)
 		)
-		(pin "CurrentADC" input
-			(at 170.18 107.95 0)
-			(uuid "bfd69b31-58f6-49ba-b628-a1c44da3fc40")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "I2C_SCL" input
-			(at 134.62 138.43 180)
-			(uuid "be0e3912-6d17-4141-b2e4-9a4a3061403b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "I2C_SDA" input
-			(at 134.62 135.89 180)
-			(uuid "81907ac2-4423-45ad-8ec3-ea1c8652378d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "PWMServo_CAS" input
 			(at 134.62 76.2 180)
 			(uuid "b4ae36d9-8be0-43dd-9bfd-755902f6b656")
@@ -919,16 +926,6 @@
 				(justify left)
 			)
 		)
-		(pin "IMU_Interrutpt" input
-			(at 134.62 113.03 180)
-			(uuid "e3394eec-a5bd-40bd-8104-8532230e31b0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "LimitSwitchCAS" input
 			(at 134.62 78.74 180)
 			(uuid "a5e1bb56-97d7-44fb-862d-4f7811c562d8")
@@ -942,6 +939,26 @@
 		(pin "LimitSwitchRoll" input
 			(at 134.62 88.9 180)
 			(uuid "a01ec9f0-3f57-43bb-b7ea-e2669369e511")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CS_BARO" input
+			(at 134.62 134.62 180)
+			(uuid "e755e642-45ac-4be3-9256-f98f1e62352b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CurrentCheck" input
+			(at 134.62 93.98 180)
+			(uuid "ccc27e00-0a84-484f-b9d7-8cc7b6f45ca8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1071,16 +1088,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "Servo5v" output
-			(at 86.36 87.63 0)
-			(uuid "10297c32-8490-4b3b-9299-c8d0ab7dd3f1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(pin "USB 5v" passive
