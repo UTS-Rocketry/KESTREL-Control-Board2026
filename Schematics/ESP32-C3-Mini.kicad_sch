@@ -5747,7 +5747,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C96346"
+		(property "LCSC" "C84376"
 			(at 151.13 66.04 0)
 			(effects
 				(font
@@ -6338,6 +6338,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 227.33 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "371cb90b-c8b0-43fe-a4ac-dd615a9bafb4")
 		)
@@ -6686,7 +6695,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uf"
+		(property "Value" "1u"
 			(at 243.84 53.3399 0)
 			(effects
 				(font
@@ -6714,6 +6723,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 240.03 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C28323"
 			(at 240.03 52.07 0)
 			(effects
 				(font
@@ -6859,7 +6877,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C96346"
+		(property "LCSC" "C84376"
 			(at 163.83 54.61 0)
 			(effects
 				(font

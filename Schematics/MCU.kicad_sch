@@ -3913,6 +3913,10 @@
 		(uuid "05e1228e-ead8-41a1-9aef-97be820df14d")
 	)
 	(no_connect
+		(at 172.72 78.74)
+		(uuid "06999e32-3052-4479-9dbc-e95d3d08138f")
+	)
+	(no_connect
 		(at 38.1 50.8)
 		(uuid "0716a7d4-8f1c-4ddd-b748-b41079f559e1")
 	)
@@ -3931,10 +3935,6 @@
 	(no_connect
 		(at 38.1 81.28)
 		(uuid "2e4e91c5-4431-4465-89b6-1d82660a2dc4")
-	)
-	(no_connect
-		(at 132.08 93.98)
-		(uuid "31b21453-ebd9-4d24-a945-f2cc8e6def02")
 	)
 	(no_connect
 		(at 132.08 119.38)
@@ -3963,10 +3963,6 @@
 	(no_connect
 		(at 172.72 154.94)
 		(uuid "53af1f44-98b1-4874-9c1b-f6db958905a6")
-	)
-	(no_connect
-		(at 132.08 129.54)
-		(uuid "5b1c4685-8129-4580-89be-d91bf112ffb9")
 	)
 	(no_connect
 		(at 172.72 101.6)
@@ -4001,10 +3997,6 @@
 		(uuid "a2f837d0-3cb8-4c0a-ae4c-1fbf0516a4f7")
 	)
 	(no_connect
-		(at 172.72 78.74)
-		(uuid "a7641bc5-b0f3-4b7a-8212-3f7d70d66627")
-	)
-	(no_connect
 		(at 172.72 157.48)
 		(uuid "a909d0e5-0167-441a-9c89-3b9bc1caaf13")
 	)
@@ -4033,10 +4025,6 @@
 		(uuid "d92f4259-ca82-4dcc-ab49-4fb031d13d35")
 	)
 	(no_connect
-		(at 132.08 121.92)
-		(uuid "de91e8d9-1260-485e-9756-21c28a836ec0")
-	)
-	(no_connect
 		(at 132.08 132.08)
 		(uuid "df9d31f1-5109-489a-9aab-a5dd0e1decad")
 	)
@@ -4046,7 +4034,7 @@
 	)
 	(no_connect
 		(at 172.72 76.2)
-		(uuid "efc0686b-f4c6-409c-9a69-b9b392539b8d")
+		(uuid "f0cac2ed-a477-4f98-bd13-45510b8d7ecb")
 	)
 	(wire
 		(pts
@@ -4157,6 +4145,16 @@
 			(type default)
 		)
 		(uuid "1f257c2c-55e3-4017-a230-8786e2a50620")
+	)
+	(wire
+		(pts
+			(xy 125.73 93.98) (xy 132.08 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f57197d-c23a-4dd2-ab5b-7d2a2e8f8871")
 	)
 	(wire
 		(pts
@@ -4640,6 +4638,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 129.54) (xy 132.08 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "884be7f8-183f-4327-bf6a-cd0ea1b778d8")
+	)
+	(wire
+		(pts
 			(xy 168.91 55.88) (xy 181.61 55.88)
 		)
 		(stroke
@@ -4847,6 +4855,16 @@
 			(type default)
 		)
 		(uuid "af697e47-4e44-4c99-8804-02b9b91fb09b")
+	)
+	(wire
+		(pts
+			(xy 123.19 121.92) (xy 132.08 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b14f30a4-7728-4899-8efb-d4eb1eb0cd2f")
 	)
 	(wire
 		(pts
@@ -5243,6 +5261,17 @@
 		)
 		(uuid "1935c6f7-a068-4c7b-a4aa-fe22eb58bd20")
 	)
+	(hierarchical_label "UART4_RX"
+		(shape input)
+		(at 125.73 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "35ad1d3b-d897-46e5-bf45-a2a7d6c568c2")
+	)
 	(hierarchical_label "SPI2_SCK"
 		(shape input)
 		(at 177.8 144.78 0)
@@ -5253,6 +5282,17 @@
 			(justify left)
 		)
 		(uuid "3bc2631c-5303-4b94-9249-33941a3222a8")
+	)
+	(hierarchical_label "ESP32_ON"
+		(shape input)
+		(at 123.19 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4ac65ce8-6427-42ba-9c68-20129cc73476")
 	)
 	(hierarchical_label "CAN_RX_2"
 		(shape input)
@@ -5352,6 +5392,17 @@
 			(justify left)
 		)
 		(uuid "96b785af-d460-451e-bd6a-18a1a080cc2b")
+	)
+	(hierarchical_label "UART4_TX"
+		(shape input)
+		(at 123.19 129.54 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "aae18f8b-5622-4d7a-bb4f-4397e781c7f5")
 	)
 	(hierarchical_label "D+"
 		(shape input)
@@ -6865,7 +6916,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C98192"
 			(at 127 39.37 0)
 			(effects
 				(font

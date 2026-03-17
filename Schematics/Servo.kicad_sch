@@ -1463,7 +1463,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 57.912 115.57 90)
 			(effects
 				(font
@@ -1482,6 +1482,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 59.69 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C84376"
 			(at 59.69 115.57 0)
 			(effects
 				(font
@@ -1787,6 +1796,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C474892"
+			(at 83.82 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3d8cf660-8859-49ce-99ce-3adf51c8e8d5")
 		)
@@ -1852,6 +1870,15 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 134.62 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C474892"
 			(at 134.62 118.11 0)
 			(effects
 				(font
@@ -2302,6 +2329,15 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 185.42 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C474892"
 			(at 185.42 119.38 0)
 			(effects
 				(font

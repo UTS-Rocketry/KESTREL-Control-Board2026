@@ -95,6 +95,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 68.58) (xy 177.8 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ea8fc3f-16b4-475d-bebe-8dd9b1188423")
+	)
+	(wire
+		(pts
 			(xy 128.27 88.9) (xy 134.62 88.9)
 		)
 		(stroke
@@ -152,6 +162,16 @@
 			(type default)
 		)
 		(uuid "783a6c9b-a37d-48e7-8eb2-ed24a40cbf0c")
+	)
+	(wire
+		(pts
+			(xy 170.18 63.5) (xy 177.8 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ac9db4e-0ed1-4ccb-b21b-67a110335bbb")
 	)
 	(wire
 		(pts
@@ -312,6 +332,16 @@
 			(type default)
 		)
 		(uuid "f42ed53c-4e63-4526-b3ce-67afef221c01")
+	)
+	(wire
+		(pts
+			(xy 170.18 66.04) (xy 177.8 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbdc9fd7-aa17-491f-9ad7-02e1c55f2bda")
 	)
 	(wire
 		(pts
@@ -520,38 +550,8 @@
 				(justify left top)
 			)
 		)
-		(pin "D+" input
-			(at 177.8 66.04 180)
-			(uuid "f8e43d04-fbe3-42c7-8aef-06d3c3c1caf7")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "D-" input
-			(at 177.8 68.58 180)
-			(uuid "288efcef-e0f7-4d24-bbf1-611cf2961216")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "ESPPower" input
-			(at 177.8 72.39 180)
-			(uuid "4e7c45bf-a5c7-4e0f-84fe-fb6e129cb199")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "ESP_RX" input
-			(at 177.8 74.93 180)
+			(at 177.8 66.04 180)
 			(uuid "ea7102bd-4d03-4280-bdcd-526a9d360b02")
 			(effects
 				(font
@@ -563,6 +563,16 @@
 		(pin "ESP_TX" input
 			(at 177.8 63.5 180)
 			(uuid "0896d1dc-421e-4da8-94f7-c58503ae05d0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "STM-ESP-ON" input
+			(at 177.8 68.58 180)
+			(uuid "079d67c8-b4d4-45d7-85b3-9508237396c2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1056,6 +1066,36 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "UART4_RX" input
+			(at 170.18 63.5 0)
+			(uuid "92aab1a2-3181-4a26-be3e-92eb10c031a6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "UART4_TX" input
+			(at 170.18 66.04 0)
+			(uuid "82732226-c1b7-4305-b8e2-f3d45c380e35")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ESP32_ON" input
+			(at 170.18 68.58 0)
+			(uuid "6841ded1-684f-4d70-855f-70267ddea025")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
