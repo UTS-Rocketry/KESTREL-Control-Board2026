@@ -487,6 +487,98 @@
 		)
 	)
 	(sheet
+		(at 177.8 60.96)
+		(size 29.21 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "73a2bc21-c01f-45d4-b39a-2475ddcbe838")
+		(property "Sheetname" "ESP32-C3-Mini"
+			(at 177.8 60.2484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ESP32-C3-Mini.kicad_sch"
+			(at 177.8 79.3246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "D+" input
+			(at 177.8 66.04 180)
+			(uuid "f8e43d04-fbe3-42c7-8aef-06d3c3c1caf7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D-" input
+			(at 177.8 68.58 180)
+			(uuid "288efcef-e0f7-4d24-bbf1-611cf2961216")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ESPPower" input
+			(at 177.8 72.39 180)
+			(uuid "4e7c45bf-a5c7-4e0f-84fe-fb6e129cb199")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ESP_RX" input
+			(at 177.8 74.93 180)
+			(uuid "ea7102bd-4d03-4280-bdcd-526a9d360b02")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ESP_TX" input
+			(at 177.8 63.5 180)
+			(uuid "0896d1dc-421e-4da8-94f7-c58503ae05d0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "CAN-Interface-Board"
+				(path "/8a3e7f99-4046-40e8-bd7c-d9d1c8c7162e"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 105.41 59.69)
 		(size 21.59 11.43)
 		(exclude_from_sim no)

@@ -766,6 +766,10 @@
     [
       "992c9dbe-cf65-4f66-b0f4-1615492bebdc",
       "Servo"
+    ],
+    [
+      "73a2bc21-c01f-45d4-b39a-2475ddcbe838",
+      "ESP32-C3-Mini"
     ]
   ],
   "text_variables": {}

@@ -1223,261 +1223,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "LED:NeoPixel_THT"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 5.08 5.715 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right bottom)
-				)
-			)
-			(property "Value" "NeoPixel_THT"
-				(at 1.27 -5.715 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" ""
-				(at 1.27 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.adafruit.com/product/1938"
-				(at 2.54 -9.525 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "RGB LED with integrated controller, 5mm/8mm LED package"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "RGB LED NeoPixel addressable"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "LED*D5.0mm* LED*D8.0mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "NeoPixel_THT_0_0"
-				(text "RGB"
-					(at 2.286 -4.191 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-			)
-			(symbol "NeoPixel_THT_0_1"
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 1.778 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -3.556) (xy 1.778 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.699 -3.556) (xy 2.667 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 5.08 5.08)
-					(end -5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "NeoPixel_THT_1_1"
-				(pin input line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "DIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 7.62 270)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "DOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "MCU_ST_STM32F4:STM32F405RGTx"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4045,18 +3790,6 @@
 		)
 		(uuid a1b149df-fa99-48bb-8483-075accb65445)
 	)
-	(rectangle
-		(start 17.78 120.65)
-		(end 90.17 146.05)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid fda93b49-9be2-440c-b5fc-9ffdd5208557)
-	)
 	(junction
 		(at 69.85 81.28)
 		(diameter 0)
@@ -4136,12 +3869,6 @@
 		(uuid "a561c3d3-e28c-406b-8b31-1cd52be06e83")
 	)
 	(junction
-		(at 29.21 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b48d50dd-1cbe-47a2-99e2-cdefa94016c7")
-	)
-	(junction
 		(at 140.97 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4158,12 +3885,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cd4bd90c-d3e1-4de6-b6ab-643537d23a95")
-	)
-	(junction
-		(at 29.21 124.46)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d0682d23-e910-4331-9fef-638d9f8cd7cc")
 	)
 	(junction
 		(at 156.21 30.48)
@@ -4270,10 +3991,6 @@
 	(no_connect
 		(at 172.72 137.16)
 		(uuid "9241dd9d-a11f-4643-938a-e0a9fd1fb6ca")
-	)
-	(no_connect
-		(at 38.1 132.08)
-		(uuid "941a9d45-921a-49a6-825c-a1fe2dbf6fb9")
 	)
 	(no_connect
 		(at 255.27 60.96)
@@ -4433,16 +4150,6 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 124.46) (xy 29.21 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "199e49bd-95ee-4c46-b01d-981d66128f30")
-	)
-	(wire
-		(pts
 			(xy 147.32 58.42) (xy 147.32 68.58)
 		)
 		(stroke
@@ -4450,16 +4157,6 @@
 			(type default)
 		)
 		(uuid "1f257c2c-55e3-4017-a230-8786e2a50620")
-	)
-	(wire
-		(pts
-			(xy 27.94 139.7) (xy 29.21 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f7c449b-29f6-4e6d-88a3-d15f467fec94")
 	)
 	(wire
 		(pts
@@ -4550,16 +4247,6 @@
 			(type default)
 		)
 		(uuid "383d40d0-e390-4eee-9c37-0da79bdb3c35")
-	)
-	(wire
-		(pts
-			(xy 29.21 124.46) (xy 29.21 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "399eb53f-8e3d-4810-860c-b17aa9268b49")
 	)
 	(wire
 		(pts
@@ -4660,16 +4347,6 @@
 			(type default)
 		)
 		(uuid "5a581498-1b74-4e54-8d7c-7716ed8ef318")
-	)
-	(wire
-		(pts
-			(xy 29.21 135.89) (xy 29.21 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a64d208-440e-4ced-b792-80b009190bde")
 	)
 	(wire
 		(pts
@@ -4983,16 +4660,6 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 124.46) (xy 45.72 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8e9507e6-9bb9-4cd1-926f-461bdeebf9ac")
-	)
-	(wire
-		(pts
 			(xy 262.89 55.88) (xy 255.27 55.88)
 		)
 		(stroke
@@ -5173,16 +4840,6 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 139.7) (xy 45.72 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae72f449-aa03-4922-8a06-dbef44e003d6")
-	)
-	(wire
-		(pts
 			(xy 262.89 53.34) (xy 255.27 53.34)
 		)
 		(stroke
@@ -5230,16 +4887,6 @@
 			(type default)
 		)
 		(uuid "c9c8e2c6-f391-4778-8b0d-b97d8def09f7")
-	)
-	(wire
-		(pts
-			(xy 53.34 132.08) (xy 68.58 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "caa41ea0-3f3b-43ed-b411-6d1695fac084")
 	)
 	(wire
 		(pts
@@ -5540,16 +5187,6 @@
 			(justify right bottom)
 		)
 		(uuid "dfec14a3-1c7c-401b-8fe1-c151f1b07c41")
-	)
-	(label "RGB_DATA"
-		(at 68.58 132.08 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ee02f759-801e-4e65-8979-c4e6a093ae0b")
 	)
 	(hierarchical_label "SPI1_SCK"
 		(shape input)
@@ -6579,121 +6216,6 @@
 			(project "CAN-Interface-Board"
 				(path "/8a3e7f99-4046-40e8-bd7c-d9d1c8c7162e/a5486d6a-0def-49b5-badb-76c17f208987"
 					(reference "#PWR030")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 29.21 132.08 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "29e465ed-4a88-44e8-ac14-00520d041470")
-		(property "Reference" "C6"
-			(at 33.02 130.8099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nf"
-			(at 33.02 133.3499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 30.1752 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 29.21 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 29.21 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C49678"
-			(at 29.21 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 29.21 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" ""
-			(at 29.21 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MP" ""
-			(at 29.21 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C49678"
-			(at 29.21 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4df1ad64-d5e3-4563-8000-4ced57d9f772")
-		)
-		(pin "2"
-			(uuid "b70be623-561c-4aed-a7d9-b4191172c978")
-		)
-		(instances
-			(project "CAN-Interface-Board"
-				(path "/8a3e7f99-4046-40e8-bd7c-d9d1c8c7162e/a5486d6a-0def-49b5-badb-76c17f208987"
-					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -10859,139 +10381,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 27.94 124.46 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d8d33b9f-61b8-4abf-a488-fa19db598218")
-		(property "Reference" "#PWR026"
-			(at 21.59 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 24.13 124.4599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 27.94 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 27.94 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 27.94 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a093d28f-a535-42ff-b643-48f6c7b2901a")
-		)
-		(instances
-			(project "CAN-Interface-Board"
-				(path "/8a3e7f99-4046-40e8-bd7c-d9d1c8c7162e/a5486d6a-0def-49b5-badb-76c17f208987"
-					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 27.94 139.7 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "db4e0795-9188-4222-a322-8ab2b14753b0")
-		(property "Reference" "#PWR027"
-			(at 31.75 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 24.13 139.6999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 27.94 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 27.94 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 27.94 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0076a6e3-52eb-44a0-a40b-48d34c99ca22")
-		)
-		(instances
-			(project "CAN-Interface-Board"
-				(path "/8a3e7f99-4046-40e8-bd7c-d9d1c8c7162e/a5486d6a-0def-49b5-badb-76c17f208987"
-					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 242.57 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11051,127 +10440,6 @@
 			(project "CAN-Interface-Board"
 				(path "/8a3e7f99-4046-40e8-bd7c-d9d1c8c7162e/a5486d6a-0def-49b5-badb-76c17f208987"
 					(reference "#PWR057")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:NeoPixel_THT")
-		(at 45.72 132.08 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f3b4d351-2266-4a6f-b3c9-9cb77af88f09")
-		(property "Reference" "D3"
-			(at 58.42 126.6346 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NeoPixel_THT"
-			(at 58.42 129.1746 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_Kingbright_AAA3528ESGCT"
-			(at 44.45 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.adafruit.com/product/1938"
-			(at 43.18 122.555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller, 5mm/8mm LED package"
-			(at 45.72 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C2827321"
-			(at 45.72 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 45.72 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" ""
-			(at 45.72 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MP" ""
-			(at 45.72 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2827321"
-			(at 45.72 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "b23e02ac-3300-45af-b081-b3957d99efb5")
-		)
-		(pin "3"
-			(uuid "9465f488-ad37-4247-88aa-3ea4d5ee2754")
-		)
-		(pin "1"
-			(uuid "16219284-a4de-4010-b1a1-78bf7134d1cc")
-		)
-		(pin "2"
-			(uuid "945d65f5-3d50-4fc0-bcb5-a6305e5173bc")
-		)
-		(instances
-			(project "CAN-Interface-Board"
-				(path "/8a3e7f99-4046-40e8-bd7c-d9d1c8c7162e/a5486d6a-0def-49b5-badb-76c17f208987"
-					(reference "D3")
 					(unit 1)
 				)
 			)
