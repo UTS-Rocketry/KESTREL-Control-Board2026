@@ -1035,6 +1035,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 118.11) (xy 129.54 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "876ea8e1-820d-4681-b8e8-bfc619dad6c0")
+	)
+	(wire
+		(pts
 			(xy 146.05 83.82) (xy 148.59 83.82)
 		)
 		(stroke
@@ -1075,7 +1085,7 @@
 	)
 	(hierarchical_label "Roll_PWM"
 		(shape input)
-		(at 129.54 118.11 180)
+		(at 125.73 118.11 180)
 		(effects
 			(font
 				(size 1.27 1.27)

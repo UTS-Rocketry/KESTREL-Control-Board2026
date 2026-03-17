@@ -32,3 +32,8 @@ Thumbs.db
 .vscode/
 .idea/
 *~
+# Autosave / lock files
+*~
+*.lck
+\#*\#
+.\#*
