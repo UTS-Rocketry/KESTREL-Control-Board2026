@@ -4121,10 +4121,6 @@
 		(uuid "05e1228e-ead8-41a1-9aef-97be820df14d")
 	)
 	(no_connect
-		(at 172.72 78.74)
-		(uuid "06999e32-3052-4479-9dbc-e95d3d08138f")
-	)
-	(no_connect
 		(at 38.1 50.8)
 		(uuid "0716a7d4-8f1c-4ddd-b748-b41079f559e1")
 	)
@@ -4175,6 +4171,10 @@
 	(no_connect
 		(at 172.72 101.6)
 		(uuid "5b2483a5-1b74-49e9-8454-eae48eb4ae92")
+	)
+	(no_connect
+		(at 132.08 109.22)
+		(uuid "603b8dde-b02b-4ee4-af53-7ff3e87fdcfb")
 	)
 	(no_connect
 		(at 255.27 63.5)
@@ -5106,6 +5106,16 @@
 	)
 	(wire
 		(pts
+			(xy 181.61 78.74) (xy 172.72 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1d0b643-6329-42ab-a56d-927079ef250e")
+	)
+	(wire
+		(pts
 			(xy 127 35.56) (xy 140.97 35.56)
 		)
 		(stroke
@@ -5173,16 +5183,6 @@
 			(type default)
 		)
 		(uuid "da1a544e-b2fe-400a-a66e-ce4d334f711a")
-	)
-	(wire
-		(pts
-			(xy 111.76 109.22) (xy 132.08 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd24385b-0ad3-45c6-86eb-806383a23d13")
 	)
 	(wire
 		(pts
@@ -5405,12 +5405,12 @@
 		(uuid "a5fae139-d51e-4adb-a9f5-e8fd51987565")
 	)
 	(label "RGB_DATA"
-		(at 111.76 109.22 180)
+		(at 181.61 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "beeeae6e-24e0-4129-9d2f-ff3ca3e8c32a")
 	)
