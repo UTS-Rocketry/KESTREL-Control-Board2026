@@ -802,7 +802,7 @@
         "uuid": "8a3e7f99-4046-40e8-bd7c-d9d1c8c7162e"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR66-67,J6",
     "variants": []
   },
   "sheets": [
@@ -841,10 +841,6 @@
     [
       "992c9dbe-cf65-4f66-b0f4-1615492bebdc",
       "Servo"
-    ],
-    [
-      "73a2bc21-c01f-45d4-b39a-2475ddcbe838",
-      "ESP32-C3-Mini"
     ]
   ],
   "text_variables": {},

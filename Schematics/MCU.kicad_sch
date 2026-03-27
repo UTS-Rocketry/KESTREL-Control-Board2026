@@ -4366,13 +4366,13 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 93.98) (xy 132.08 93.98)
+			(xy 123.19 121.92) (xy 132.08 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1f57197d-c23a-4dd2-ab5b-7d2a2e8f8871")
+		(uuid "22e2899b-28ae-4646-8a91-33f8fac2e35e")
 	)
 	(wire
 		(pts
@@ -4393,6 +4393,16 @@
 			(type default)
 		)
 		(uuid "29306b99-40e6-4efc-aaea-29df32079b95")
+	)
+	(wire
+		(pts
+			(xy 33.02 91.44) (xy 39.37 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ee8e2a4-a037-4dac-893b-3095bd50ebd5")
 	)
 	(wire
 		(pts
@@ -4543,6 +4553,16 @@
 			(type default)
 		)
 		(uuid "4d5feb8d-f3dd-448c-a03f-b2b9a99bc85d")
+	)
+	(wire
+		(pts
+			(xy 124.46 93.98) (xy 132.08 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e501e82-30ec-4f7b-8f97-7d082ba9b9ec")
 	)
 	(wire
 		(pts
@@ -4846,16 +4866,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 129.54) (xy 132.08 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "884be7f8-183f-4327-bf6a-cd0ea1b778d8")
-	)
-	(wire
-		(pts
 			(xy 168.91 55.88) (xy 181.61 55.88)
 		)
 		(stroke
@@ -4986,6 +4996,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 129.54) (xy 132.08 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3b56165-6b1e-401e-bc41-1155e57494ad")
+	)
+	(wire
+		(pts
 			(xy 160.02 55.88) (xy 168.91 55.88)
 		)
 		(stroke
@@ -5076,16 +5096,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 121.92) (xy 132.08 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b14f30a4-7728-4899-8efb-d4eb1eb0cd2f")
-	)
-	(wire
-		(pts
 			(xy 152.4 165.1) (xy 152.4 170.18)
 		)
 		(stroke
@@ -5126,7 +5136,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 81.28) (xy 69.85 90.17)
+			(xy 69.85 81.28) (xy 69.85 91.44)
 		)
 		(stroke
 			(width 0)
@@ -5196,16 +5206,6 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 90.17) (xy 39.37 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3335dae-bb70-4c96-bed2-b8500d062ab7")
-	)
-	(wire
-		(pts
 			(xy 261.62 40.64) (xy 255.27 40.64)
 		)
 		(stroke
@@ -5236,7 +5236,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 90.17) (xy 46.99 90.17)
+			(xy 69.85 91.44) (xy 46.99 91.44)
 		)
 		(stroke
 			(width 0)
@@ -5489,16 +5489,16 @@
 		)
 		(uuid "1935c6f7-a068-4c7b-a4aa-fe22eb58bd20")
 	)
-	(hierarchical_label "UART4_RX"
+	(hierarchical_label "UART5_TX"
 		(shape input)
-		(at 125.73 93.98 180)
+		(at 123.19 129.54 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "35ad1d3b-d897-46e5-bf45-a2a7d6c568c2")
+		(uuid "20e24747-6acd-462e-bfdc-731a3b8819a8")
 	)
 	(hierarchical_label "SPI2_SCK"
 		(shape input)
@@ -5511,17 +5511,6 @@
 		)
 		(uuid "3bc2631c-5303-4b94-9249-33941a3222a8")
 	)
-	(hierarchical_label "ESP32_ON"
-		(shape input)
-		(at 123.19 121.92 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4ac65ce8-6427-42ba-9c68-20129cc73476")
-	)
 	(hierarchical_label "CAN_RX_2"
 		(shape input)
 		(at 177.8 149.86 0)
@@ -5532,6 +5521,17 @@
 			(justify left)
 		)
 		(uuid "534c54c7-3df5-4e77-b92c-c248b51cd07e")
+	)
+	(hierarchical_label "UART5_RX"
+		(shape input)
+		(at 124.46 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "53fe14df-a4a3-4183-81ad-37bd48e7baa7")
 	)
 	(hierarchical_label "CS_BARO"
 		(shape input)
@@ -5621,16 +5621,16 @@
 		)
 		(uuid "96b785af-d460-451e-bd6a-18a1a080cc2b")
 	)
-	(hierarchical_label "UART4_TX"
+	(hierarchical_label "GPS_RESET"
 		(shape input)
-		(at 123.19 129.54 180)
+		(at 123.19 121.92 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "aae18f8b-5622-4d7a-bb4f-4397e781c7f5")
+		(uuid "9fdb20d4-4439-4b56-8c1d-6e63998490fe")
 	)
 	(hierarchical_label "D+"
 		(shape input)
@@ -6143,7 +6143,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 33.02 90.17 270)
+		(at 33.02 91.44 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6154,7 +6154,7 @@
 		(fields_autoplaced yes)
 		(uuid "0ea186d8-2582-4ab3-a901-210a1d436310")
 		(property "Reference" "#PWR029"
-			(at 26.67 90.17 0)
+			(at 26.67 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6165,7 +6165,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 29.21 90.1699 90)
+			(at 29.21 91.4399 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6176,7 +6176,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 33.02 90.17 0)
+			(at 33.02 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6187,7 +6187,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 90.17 0)
+			(at 33.02 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6198,7 +6198,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 33.02 90.17 0)
+			(at 33.02 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6468,7 +6468,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 43.18 90.17 90)
+		(at 43.18 91.44 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6479,7 +6479,7 @@
 		(fields_autoplaced yes)
 		(uuid "1c0a8be1-ce89-4630-b5ca-bdb6d54a87f9")
 		(property "Reference" "R4"
-			(at 43.18 83.82 90)
+			(at 43.18 85.09 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6488,8 +6488,8 @@
 				)
 			)
 		)
-		(property "Value" "100k"
-			(at 43.18 86.36 90)
+		(property "Value" "10k"
+			(at 43.18 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6499,7 +6499,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 43.18 91.948 90)
+			(at 43.18 93.218 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6510,7 +6510,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 90.17 0)
+			(at 43.18 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6521,7 +6521,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 43.18 90.17 0)
+			(at 43.18 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6532,7 +6532,7 @@
 			)
 		)
 		(property "LCSC Part" "C96346"
-			(at 43.18 90.17 90)
+			(at 43.18 91.44 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6543,7 +6543,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 43.18 90.17 90)
+			(at 43.18 91.44 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6554,7 +6554,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 43.18 90.17 90)
+			(at 43.18 91.44 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6565,7 +6565,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 43.18 90.17 90)
+			(at 43.18 91.44 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6576,7 +6576,7 @@
 			)
 		)
 		(property "LCSC" "C96346"
-			(at 43.18 90.17 90)
+			(at 43.18 91.44 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
