@@ -1560,6 +1560,28 @@
 				)
 			)
 		)
+		(property "SnapEDA_Link" ""
+			(at 156.21 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
+			(at 156.21 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "76feb9af-6368-4e8b-bee7-592c4fb69e88")
 		)
@@ -1716,7 +1738,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 127 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -1772,6 +1794,28 @@
 			)
 		)
 		(property "LCSC" "C28323"
+			(at 127 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 127 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
 			(at 127 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -2088,7 +2132,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 181.61 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -2144,6 +2188,28 @@
 			)
 		)
 		(property "LCSC" "C98192"
+			(at 181.61 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 181.61 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
 			(at 181.61 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -2381,8 +2447,8 @@
 				)
 			)
 		)
-		(property "Description" "Schottky diode"
-			(at 83.82 109.22 0)
+		(property "Description" ""
+			(at 83.82 109.22 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2437,6 +2503,28 @@
 			)
 		)
 		(property "MP" ""
+			(at 83.82 109.22 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 83.82 109.22 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
 			(at 83.82 109.22 90)
 			(hide yes)
 			(show_name no)
@@ -2547,7 +2635,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -2598,7 +2686,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" ""
 			(at 88.9 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -2610,6 +2698,28 @@
 			)
 		)
 		(property "LCSC" "C17644051"
+			(at 88.9 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 88.9 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
 			(at 88.9 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -2770,8 +2880,8 @@
 				)
 			)
 		)
-		(property "Description" "Schottky diode"
-			(at 101.6 109.22 0)
+		(property "Description" ""
+			(at 101.6 109.22 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2826,6 +2936,28 @@
 			)
 		)
 		(property "MP" ""
+			(at 101.6 109.22 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 101.6 109.22 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
 			(at 101.6 109.22 90)
 			(hide yes)
 			(show_name no)

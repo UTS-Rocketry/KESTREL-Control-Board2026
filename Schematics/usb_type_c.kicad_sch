@@ -2024,7 +2024,7 @@
 				)
 			)
 		)
-		(property "Description" "USB Full-Featured Type-C Receptacle connector"
+		(property "Description" ""
 			(at 82.55 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -2036,6 +2036,28 @@
 			)
 		)
 		(property "LCSC" "C49566391"
+			(at 82.55 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 82.55 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
 			(at 82.55 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -2268,7 +2290,7 @@
 				)
 			)
 		)
-		(property "Description" "Semtech SRV05-4.TCT, Uni-Directional TVS Diode Array, 300W, 6-Pin SOT-23"
+		(property "Description" ""
 			(at 137.16 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -2277,7 +2299,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
 		(property "MANUFACTURER_NAME" "SEMTECH"
@@ -2401,6 +2422,28 @@
 			)
 		)
 		(property "LCSC" "C13612"
+			(at 137.16 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 137.16 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
 			(at 137.16 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -2668,7 +2711,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 149.86 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -2680,6 +2723,28 @@
 			)
 		)
 		(property "LCSC" "C27834"
+			(at 149.86 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 149.86 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
 			(at 149.86 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -2851,7 +2916,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 161.29 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -2863,6 +2928,28 @@
 			)
 		)
 		(property "LCSC" "C27834"
+			(at 161.29 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 161.29 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
 			(at 161.29 80.01 0)
 			(hide yes)
 			(show_name no)

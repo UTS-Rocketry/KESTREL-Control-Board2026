@@ -1610,7 +1610,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" ""
 			(at 190.5 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -1666,6 +1666,28 @@
 			)
 		)
 		(property "LCSC" "C17644051"
+			(at 190.5 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 190.5 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
 			(at 190.5 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -1747,7 +1769,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 148.59 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -1803,6 +1825,28 @@
 			)
 		)
 		(property "LCSC" "C269726"
+			(at 148.59 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 148.59 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
 			(at 148.59 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -2040,7 +2084,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 93.98 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -2096,6 +2140,28 @@
 			)
 		)
 		(property "LCSC" "C49678"
+			(at 93.98 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 93.98 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
 			(at 93.98 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -2174,7 +2240,7 @@
 				)
 			)
 		)
-		(property "Description" "Solder Jumper, 2-pole, open"
+		(property "Description" ""
 			(at 153.67 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -2219,6 +2285,28 @@
 			)
 		)
 		(property "LCSC" "C474893"
+			(at 153.67 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 153.67 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
 			(at 153.67 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -2300,7 +2388,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" ""
 			(at 190.5 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -2356,6 +2444,28 @@
 			)
 		)
 		(property "LCSC" "C17644051"
+			(at 190.5 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 190.5 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
 			(at 190.5 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -2515,7 +2625,7 @@
 				)
 			)
 		)
-		(property "Description" "CAN Bus Transceivers, 3.3V, 1Mbps, Low-Power capabilities, SOIC-8"
+		(property "Description" ""
 			(at 133.35 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -2571,6 +2681,28 @@
 			)
 		)
 		(property "LCSC" "C1543812"
+			(at 133.35 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 133.35 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
 			(at 133.35 90.17 0)
 			(hide yes)
 			(show_name no)

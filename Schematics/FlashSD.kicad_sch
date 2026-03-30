@@ -1018,8 +1018,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 133.35 91.44 0)
+		(property "Description" ""
+			(at 133.35 91.44 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1041,6 +1041,28 @@
 			)
 		)
 		(property "LCSC" "C84376"
+			(at 133.35 91.44 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 133.35 91.44 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
 			(at 133.35 91.44 90)
 			(hide yes)
 			(show_name no)
@@ -1119,8 +1141,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 118.11 99.06 0)
+		(property "Description" ""
+			(at 118.11 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1142,6 +1164,28 @@
 			)
 		)
 		(property "LCSC" "C126353"
+			(at 118.11 99.06 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 118.11 99.06 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
 			(at 118.11 99.06 90)
 			(hide yes)
 			(show_name no)
@@ -1356,7 +1400,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Card:microSD_HC_Molex_104031-0811"
+		(property "Footprint" "Connector_Card:microSD_HC_Molex_47219-2001"
 			(at 208.28 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -1378,7 +1422,7 @@
 				)
 			)
 		)
-		(property "Description" "Micro SD Card Socket"
+		(property "Description" ""
 			(at 179.07 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -1401,6 +1445,28 @@
 			)
 		)
 		(property "LCSC" "C164170"
+			(at 179.07 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 179.07 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DESCRIPTION" ""
 			(at 179.07 96.52 0)
 			(hide yes)
 			(show_name no)
