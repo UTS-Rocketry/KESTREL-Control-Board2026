@@ -1,8 +1,10 @@
 # CAS Interface Board 2026
 
+<img width="1288" height="2591" alt="image" src="https://github.com/user-attachments/assets/fdfd3684-4780-4c69-9c9a-4beff4ede71d" />
+
 Control Actuation System (CAS) Interface Board for the UTS Rocketry avionics stack.
 
-This board provides closed-loop control for the airbrake and roll control systems, along with sensor interfaces and onboard data logging. The design is based on the STM32F405RGT6 microcontroller and integrates inertial sensing, actuator control, and non-volatile storage.
+This board provides closed-loop control for the airbrake and parafoil control systems, along with sensor interfaces and onboard data logging. The design is based on the STM32F405RGT6 microcontroller and integrates inertial sensing, actuator control, and non-volatile storage.
 
 The CAS board is intended to operate as part of the UTS Rocketry flight avionics architecture.
 
@@ -13,12 +15,12 @@ The CAS board is intended to operate as part of the UTS Rocketry flight avionics
 The CAS Interface Board is responsible for:
 
 - Airbrake deployment control
-- Roll stabilization control
+- Roll stabilisation control
 - Sensor acquisition
 - Data logging
 - Actuator interfacing
 
-Closed-loop control is performed onboard using IMU and barometric sensor measurements.
+Closed-loop control is performed onboard using IMU, barometric sensor, and GPS measurements.
 
 ---
 
@@ -98,19 +100,6 @@ Purpose:
 
 ---
 
-#### External Flash
-
-Interface:
-
-- SPI
-
-Purpose:
-
-- Backup logging
-- Blackbox storage
-
----
-
 ### Actuator Interfaces
 
 #### Servo Outputs
@@ -132,118 +121,6 @@ Signal Voltage:
 
 ---
 
-### Analog Inputs
-
-#### Airbrake Position Feedback
-
-External potentiometer input.
-
-Signals:
-
-- 3.3 V
-- ADC Input
-- GND
-
----
-
-### Digital Inputs
-
-#### Limit Switches
-
-Digital inputs for actuator limits.
-
-Typical configuration:
-
-- External pull-down resistors
-- GPIO input
-
----
-
-#### IMU Interrupt
-
-IMU data-ready interrupt.
-
-Connected to STM32 EXTI input.
-
----
-
-### Debug Interface
-
-Serial Wire Debug (SWD)
-
-Signals:
-
-- SWDIO
-- SWCLK
-- NRST
-- 3.3 V
-- GND
-
-Used for:
-
-- Programming
-- Debugging
-
----
-
-## Communication Interfaces
-
-### SPI Buses
-
-SPI1
-
-Used for:
-
-- IMU
-
-SPI2
-
-Used for:
-
-- MicroSD card
-- External flash
-
----
-
-### I2C Bus
-
-I2C1
-
-Used for:
-
-- Barometer
-
----
-
-## Power Architecture
-
-### 3.3 V Rail
-
-Supplies:
-
-- MCU
-- IMU
-- Barometer
-- Flash
-- SD card logic
-
----
-
-### 5 V Rail
-
-Supplies:
-
-- Servo motors
-
----
-
-### Grounding
-
-- Continuous ground plane
-- Shared logic and servo ground
-
----
-
 ## Control System
 
 ### Airbrake Control
@@ -260,22 +137,6 @@ Inputs:
 Outputs:
 
 - Airbrake servo PWM
-
----
-
-### Roll Control
-
-Roll stabilization is performed using gyroscope measurements from the IMU.
-
-Inputs:
-
-- Roll rate from IMU
-
-Outputs:
-
-- Roll control servo PWM
-
----
 
 ## Firmware
 
