@@ -5,6 +5,8 @@
 # Backup folders
 *-backups/
 **/*-backups/
+.history
+.claude
 
 # Project-local settings (machine specific)
 *.kicad_prl
@@ -32,3 +34,8 @@ Thumbs.db
 .vscode/
 .idea/
 *~
+# Autosave / lock files
+*~
+*.lck
+\#*\#
+.\#*
