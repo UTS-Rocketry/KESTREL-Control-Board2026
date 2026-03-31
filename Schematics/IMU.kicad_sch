@@ -898,9 +898,21 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 62.23 48.26)
+		(end 199.39 143.51)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "e2153028-3a52-4f8a-a945-6820397e3a64")
+	)
 	(text "Using SPI for faster reads for control"
 		(exclude_from_sim no)
-		(at 35.56 124.206 0)
+		(at 103.886 129.794 0)
 		(effects
 			(font
 				(size 1.27 1.27)

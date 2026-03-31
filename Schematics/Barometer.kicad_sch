@@ -932,6 +932,18 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 73.66 54.61)
+		(end 203.2 128.27)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "60246774-47bc-419f-b2f0-973a0e3cb106")
+	)
 	(text "Baraometer to detect altitude and apogee events"
 		(exclude_from_sim no)
 		(at 149.86 67.056 0)

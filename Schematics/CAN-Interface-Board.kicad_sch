@@ -878,10 +878,10 @@
 		(uuid "30169991-1c74-40d0-86b8-9fbb2d80f558")
 	)
 	(junction
-		(at 176.53 127)
+		(at 177.8 127)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b9a5ede6-7bfc-47a6-84d3-ada0c0eb81a4")
+		(uuid "522cbd2d-3ea9-4306-8449-556b7c5b53d9")
 	)
 	(wire
 		(pts
@@ -925,6 +925,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 111.76) (xy 177.8 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14f1ad34-1f52-48a5-9b6f-6f5f6c8c592d")
+	)
+	(wire
+		(pts
 			(xy 132.08 120.65) (xy 132.08 143.51)
 		)
 		(stroke
@@ -955,13 +965,13 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 127) (xy 218.44 127)
+			(xy 177.8 127) (xy 218.44 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "31d5b373-6153-450c-99f0-0c96f74767d2")
+		(uuid "26bc9d73-6ad9-4242-bfde-4feb3b760704")
 	)
 	(wire
 		(pts
@@ -985,7 +995,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 88.9) (xy 134.62 88.9)
+			(xy 128.27 99.06) (xy 134.62 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1015,7 +1025,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 127) (xy 176.53 127)
+			(xy 170.18 127) (xy 177.8 127)
 		)
 		(stroke
 			(width 0)
@@ -1095,23 +1105,13 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 93.98) (xy 134.62 93.98)
+			(xy 248.92 129.54) (xy 241.3 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "81718226-5ab1-43d6-807a-68381c265f1f")
-	)
-	(wire
-		(pts
-			(xy 176.53 134.62) (xy 179.07 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82b8453a-1d63-4ce0-b887-d1d36fa42118")
+		(uuid "867e6330-5bb6-477f-95aa-147e0545d552")
 	)
 	(wire
 		(pts
@@ -1165,7 +1165,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 86.36) (xy 134.62 86.36)
+			(xy 128.27 96.52) (xy 134.62 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1195,16 +1195,6 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 129.54) (xy 241.3 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1f6dab1-702e-451c-b7aa-b709bc199d93")
-	)
-	(wire
-		(pts
 			(xy 170.18 88.9) (xy 180.34 88.9)
 		)
 		(stroke
@@ -1212,6 +1202,16 @@
 			(type default)
 		)
 		(uuid "c61910f8-3ce7-46e7-b87e-5595f4c82a28")
+	)
+	(wire
+		(pts
+			(xy 128.27 85.09) (xy 134.62 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c68f97b8-5e8e-41ab-9f3b-fe5febb572ca")
 	)
 	(wire
 		(pts
@@ -1225,6 +1225,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 111.76) (xy 177.8 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d106f3f6-1de3-4f35-a9d7-5f5c15e71b6b")
+	)
+	(wire
+		(pts
 			(xy 127 120.65) (xy 132.08 120.65)
 		)
 		(stroke
@@ -1232,6 +1242,16 @@
 			(type default)
 		)
 		(uuid "d4ecf392-19d5-4ba2-8d7b-8d3b73948623")
+	)
+	(wire
+		(pts
+			(xy 128.27 87.63) (xy 134.62 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de2c33df-3717-4b98-b7a8-c9868c65871e")
 	)
 	(wire
 		(pts
@@ -1252,16 +1272,6 @@
 			(type default)
 		)
 		(uuid "eefe2c1c-fc9c-42ba-9709-bf3c949705c9")
-	)
-	(wire
-		(pts
-			(xy 128.27 97.79) (xy 134.62 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "effd93ed-39a7-4280-9808-7b5b3e8b8289")
 	)
 	(wire
 		(pts
@@ -1294,7 +1304,7 @@
 		(uuid "19141ff1-c109-4d66-8c39-bdb68303152d")
 	)
 	(label "USB5V"
-		(at 241.3 129.54 0)
+		(at 248.92 129.54 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1596,7 +1606,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 176.53 130.81 0)
+		(at 177.8 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1607,7 +1617,7 @@
 		(fields_autoplaced yes)
 		(uuid "2be8e0e7-f28e-4048-9be9-e220fe67ae52")
 		(property "Reference" "C1"
-			(at 180.34 129.5399 0)
+			(at 181.61 121.9199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1618,7 +1628,7 @@
 			)
 		)
 		(property "Value" "100nf"
-			(at 180.34 132.0799 0)
+			(at 181.61 124.4599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1629,7 +1639,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 177.4952 134.62 0)
+			(at 178.7652 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1640,7 +1650,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 176.53 130.81 0)
+			(at 177.8 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1651,7 +1661,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 176.53 130.81 0)
+			(at 177.8 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1662,7 +1672,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 176.53 130.81 0)
+			(at 177.8 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1673,7 +1683,7 @@
 			)
 		)
 		(property "LCSC" "C49678"
-			(at 176.53 130.81 0)
+			(at 177.8 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1684,7 +1694,7 @@
 			)
 		)
 		(property "DESCRIPTION" ""
-			(at 176.53 130.81 0)
+			(at 177.8 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2095,7 +2105,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 179.07 135.89 0)
+		(at 184.15 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2106,7 +2116,7 @@
 		(fields_autoplaced yes)
 		(uuid "d6f497c6-be2c-431a-be0a-dfac02f859d9")
 		(property "Reference" "#PWR05"
-			(at 179.07 142.24 0)
+			(at 184.15 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2117,7 +2127,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 179.07 140.97 0)
+			(at 184.15 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2127,7 +2137,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 179.07 135.89 0)
+			(at 184.15 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2138,7 +2148,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 135.89 0)
+			(at 184.15 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2149,7 +2159,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 179.07 135.89 0)
+			(at 184.15 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2457,7 +2467,7 @@
 			)
 		)
 		(pin "Limit_Switch_Roll" input
-			(at 128.27 88.9 0)
+			(at 128.27 99.06 0)
 			(uuid "a59ec73f-9ac1-43d4-b16e-13bd5688e256")
 			(effects
 				(font
@@ -2466,18 +2476,8 @@
 				(justify right)
 			)
 		)
-		(pin "powergood" input
-			(at 128.27 93.98 0)
-			(uuid "cc5196da-f5dd-4a9e-bb58-c6898d9a8732")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "Roll_PWM" input
-			(at 128.27 86.36 0)
+			(at 128.27 96.52 0)
 			(uuid "5ef7d3e3-dc55-4bef-a1fb-884c108ac9b2")
 			(effects
 				(font
@@ -2486,9 +2486,19 @@
 				(justify right)
 			)
 		)
-		(pin "vEnable" input
-			(at 128.27 97.79 0)
-			(uuid "cd07c671-49d9-40cb-b7b9-0871073ab4d3")
+		(pin "Channel A" input
+			(at 128.27 85.09 0)
+			(uuid "da98e92f-cece-4d54-86f5-5df20e780edd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Channel B" input
+			(at 128.27 87.63 0)
+			(uuid "6bb32778-d512-47d7-ab30-e9dc1221bf13")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2658,16 +2668,6 @@
 				(justify right)
 			)
 		)
-		(pin "5Venable" input
-			(at 134.62 97.79 180)
-			(uuid "6fbe6ef1-2e7f-4c6e-bc65-a1df6fb4d95a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "CAN_RX_2" input
 			(at 170.18 91.44 0)
 			(uuid "f6166551-35b3-40bd-8734-854ceedd6445")
@@ -2709,7 +2709,7 @@
 			)
 		)
 		(pin "PWMServo_Roll" input
-			(at 134.62 86.36 180)
+			(at 134.62 96.52 180)
 			(uuid "e3dde795-acb5-4747-842e-8ff9e3c744fc")
 			(effects
 				(font
@@ -2789,7 +2789,7 @@
 			)
 		)
 		(pin "LimitSwitchRoll" input
-			(at 134.62 88.9 180)
+			(at 134.62 99.06 180)
 			(uuid "a01ec9f0-3f57-43bb-b7ea-e2669369e511")
 			(effects
 				(font
@@ -2801,16 +2801,6 @@
 		(pin "CS_BARO" input
 			(at 134.62 134.62 180)
 			(uuid "e755e642-45ac-4be3-9256-f98f1e62352b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "CurrentCheck" input
-			(at 134.62 93.98 180)
-			(uuid "ccc27e00-0a84-484f-b9d7-8cc7b6f45ca8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2846,6 +2836,26 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "Encoder-A" input
+			(at 134.62 85.09 180)
+			(uuid "56140ebc-d656-4052-bd72-4a0f84432414")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Encoder-B" input
+			(at 134.62 87.63 180)
+			(uuid "3ad30253-5828-46d2-9e7a-5c915b97bd54")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
