@@ -93,6 +93,8 @@ target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE
     # AIRBRAKE_TEST_SEQUENCE
     # flight3
     # flight2
+
+    AIRBRAKE_TELEMETRY_LOG
 )
 
 # Remove wrong libob.a library dependency when using cpp files
