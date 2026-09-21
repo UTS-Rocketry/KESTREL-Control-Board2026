@@ -1,3 +1,4 @@
+#include <math.h>
 #include "airbrake.h"
 #include "airbrake_config.h"
 #include "flight_sensors.h"
@@ -122,8 +123,26 @@ float airbrake_update(const FlightSensorData *data, float dt)
      * was ~2179 m: the controller was already at the floor, and no amount of
      * gain tuning could have helped.
      */
+
+    // STEP 2.1 - CALCUALTE BIAS
+    // The controller currently solves for u such that predicted_apogee(u) - target_apogee = 0
+    // which has no bias toward early actuation. We introduce early actuation by changing
+    // the controller to solve for u such that predicted_apogee(u) - biased_target = 0 where
+    // biased_target = K * e_h * phi(q) where
+    // e_h = max(predicted_apogee(s,0), 0) makes the bias proportional to the current overshoot and
+    // 0 if theres no overshoot
+    // phi(q) = 0.5 * rho * v**2 makes the bias proportional to the velocity^2 which is the early
+    // bias
+
+    float rho = st.pressure_pa / (APOGEE_R_AIR * st.temperature_k);
+    float dynamic_pressure = 0.5f * rho * st.velocity_ms * st.velocity_ms;
+    float phi = clampf(dynamic_pressure / AIRBRAKE_Q_REF, 0.0f, 1.0f);
+    float overshoot_m = fmaxf(apogee_predict(&st, 0.0f) - AIRBRAKE_TARGET_APOGEE_M, 0.0f);
+    float bias_m = AIRBRAKE_K_EARLY * overshoot_m * phi;
+    float effective_target = AIRBRAKE_TARGET_APOGEE_M - bias_m;
+
     float commanded = apogee_required_fraction(&st,
-                                               AIRBRAKE_TARGET_APOGEE_M,
+                                               effective_target,
                                                &s_target_reachable);
 
     /*
