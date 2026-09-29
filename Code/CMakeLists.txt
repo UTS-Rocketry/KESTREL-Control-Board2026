@@ -64,6 +64,9 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     Core/App/Outputs/servo.c
     Core/App/AirbrakeController/airbrake_test.c
     Core/App/AirbrakeController/apogee_predict.c
+    Core/App/AppDrivers/Memory/W25Q128.c
+    Core/App/AppDrivers/Memory/W25Q128_HAL.c
+    Core/App/ApplicationHALS/flight_log.c
 )
 
 # Add include paths
@@ -76,10 +79,12 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     
     #Core/App/AppDrivers/GPS
     Core/App/AppDrivers/CAN
+    Core/App/AppDrivers/Memory
 
     Core/App/ApplicationHALS
     Core/App/FlightStateMachine
     Core/App/Outputs
+    Core/ApplicationHALS
     
 )
 
