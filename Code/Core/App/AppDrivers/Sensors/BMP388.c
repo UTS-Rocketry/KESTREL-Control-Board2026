@@ -31,92 +31,143 @@ HAL_StatusTypeDef BMP388_Init (BMP388Handle_TypeDef *bmp) {
 
     HAL_StatusTypeDef result;
     uint8_t data;
-    
-    result = BMP388_readRegister(bmp,CHIP_ID,&data);
 
-    
+    result = BMP388_readRegister(bmp, CHIP_ID, &data);
+
     if (result != HAL_OK) {
-
+#ifdef DEBUG
+        printf("[BMP388_Init] FAILED: readRegister(CHIP_ID) HAL status=%d\r\n", result);
+#endif
         return HAL_ERROR;
     }
     if (data != BMP3_CHIP_ID) {
+#ifdef DEBUG
+        printf("[BMP388_Init] FAILED: chip ID mismatch, got 0x%02X, expected 0x%02X\r\n", data, BMP3_CHIP_ID);
+#endif
         return HAL_ERROR;
     }
+#ifdef DEBUG
+    printf("[BMP388_Init] Chip ID OK (0x%02X)\r\n", data);
+#endif
 
     result = BMP388_resetRegister(bmp);
-    
     if (result != HAL_OK) {
-
+#ifdef DEBUG
+        printf("[BMP388_Init] FAILED: resetRegister HAL status=%d\r\n", result);
+#endif
         return HAL_ERROR;
     }
+#ifdef DEBUG
+    printf("[BMP388_Init] Reset OK\r\n");
+#endif
 
     HAL_Delay(10);
 
-
     result = BMP388_GetCalibData(bmp);
-
-     if (result != HAL_OK) {
-
+    if (result != HAL_OK) {
+#ifdef DEBUG
+        printf("[BMP388_Init] FAILED: GetCalibData HAL status=%d\r\n", result);
+#endif
         return HAL_ERROR;
     }
+#ifdef DEBUG
+    printf("[BMP388_Init] Calib data OK\r\n");
+#endif
 
     result = BMP388_SetTempOS(bmp, BMP388_OVERSAMPLING_2X);
-	if (result != HAL_OK) {
-
+    if (result != HAL_OK) {
+#ifdef DEBUG
+        printf("[BMP388_Init] FAILED: SetTempOS HAL status=%d\r\n", result);
+#endif
         return HAL_ERROR;
     }
+#ifdef DEBUG
+    printf("[BMP388_Init] Temp OS set OK\r\n");
+#endif
+
     result = BMP388_SetPressOS(bmp, BMP388_OVERSAMPLING_8X);
-	if (result != HAL_OK) {
-
+    if (result != HAL_OK) {
+#ifdef DEBUG
+        printf("[BMP388_Init] FAILED: SetPressOS HAL status=%d\r\n", result);
+#endif
         return HAL_ERROR;
     }
+#ifdef DEBUG
+    printf("[BMP388_Init] Press OS set OK\r\n");
+#endif
+
     result = BMP388_SetIIRFilterCoeff(bmp, BMP3_IIR_FILTER_DISABLE);
-	if (result != HAL_OK) {
-
+    if (result != HAL_OK) {
+#ifdef DEBUG
+        printf("[BMP388_Init] FAILED: SetIIRFilterCoeff HAL status=%d\r\n", result);
+#endif
         return HAL_ERROR;
     }
+#ifdef DEBUG
+    printf("[BMP388_Init] IIR filter set OK\r\n");
+#endif
+
     result = BMP388_SetOutputDataRate(bmp, BMP3_ODR_25_HZ);
-	if (result != HAL_OK) {
-
+    if (result != HAL_OK) {
+#ifdef DEBUG
+        printf("[BMP388_Init] FAILED: SetOutputDataRate HAL status=%d\r\n", result);
+#endif
         return HAL_ERROR;
     }
+#ifdef DEBUG
+    printf("[BMP388_Init] ODR set OK\r\n");
+#endif
 
     data = bmp->osr;
-
     result = BMP388_WriteRegister(bmp, OSR, &data);
-
     if (result != HAL_OK) {
-
+#ifdef DEBUG
+        printf("[BMP388_Init] FAILED: WriteRegister(OSR, 0x%02X) HAL status=%d\r\n", data, result);
+#endif
         return HAL_ERROR;
     }
+#ifdef DEBUG
+    printf("[BMP388_Init] OSR register written OK (0x%02X)\r\n", data);
+#endif
 
     data = bmp->iir;
-    result = BMP388_WriteRegister(bmp, CONFIG ,&data);
-
-     if (result != HAL_OK) {
-
+    result = BMP388_WriteRegister(bmp, CONFIG, &data);
+    if (result != HAL_OK) {
+#ifdef DEBUG
+        printf("[BMP388_Init] FAILED: WriteRegister(CONFIG, 0x%02X) HAL status=%d\r\n", data, result);
+#endif
         return HAL_ERROR;
     }
+#ifdef DEBUG
+    printf("[BMP388_Init] CONFIG register written OK (0x%02X)\r\n", data);
+#endif
 
     data = bmp->odr;
-    result = BMP388_WriteRegister(bmp, ODR,&data);
-
-     if (result != HAL_OK) {
-
-        return HAL_ERROR;
-    }
-
-    data = BMP3_PWR_CTRL_PRESS_ON | BMP3_PWR_CTRL_TEMP_ON | BMP3_PWR_CTRL_MODE_NORMAL;;
-    result = BMP388_WriteRegister(bmp, PWR_CTRL, &data);
-    
+    result = BMP388_WriteRegister(bmp, ODR, &data);
     if (result != HAL_OK) {
-
+#ifdef DEBUG
+        printf("[BMP388_Init] FAILED: WriteRegister(ODR, 0x%02X) HAL status=%d\r\n", data, result);
+#endif
         return HAL_ERROR;
     }
+#ifdef DEBUG
+    printf("[BMP388_Init] ODR register written OK (0x%02X)\r\n", data);
+#endif
+
+    data = BMP3_PWR_CTRL_PRESS_ON | BMP3_PWR_CTRL_TEMP_ON | BMP3_PWR_CTRL_MODE_NORMAL;
+    result = BMP388_WriteRegister(bmp, PWR_CTRL, &data);
+    if (result != HAL_OK) {
+#ifdef DEBUG
+        printf("[BMP388_Init] FAILED: WriteRegister(PWR_CTRL, 0x%02X) HAL status=%d\r\n", data, result);
+#endif
+        return HAL_ERROR;
+    }
+#ifdef DEBUG
+    printf("[BMP388_Init] PWR_CTRL register written OK (0x%02X) - init complete\r\n", data);
+#endif
 
     return result;
 }
-
 
 
 HAL_StatusTypeDef BMP388_readRegister(BMP388Handle_TypeDef *bmp, BMP388_regs reg, uint8_t *data) {
