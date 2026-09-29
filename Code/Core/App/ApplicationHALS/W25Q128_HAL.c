@@ -12,13 +12,13 @@ static uint32_t flash_write_addr = FLASH_LOG_START_ADDR;
 static uint32_t flash_record_count = 0;
 
 static W25Q128_Handle_t flash;
-extern SPI_HandleTypeDef hspi3;
+extern SPI_HandleTypeDef hspi2;
 
 HAL_StatusTypeDef flash_memory_init() {
 
     HAL_StatusTypeDef result;
 
-    flash.hspi = &hspi3;
+    flash.hspi = &hspi2;
     flash.cs_port = CSFlashmMemory_GPIO_Port;
     flash.cs_pin = CSFlashmMemory_Pin;
 
@@ -39,8 +39,9 @@ HAL_StatusTypeDef flash_memory_init() {
         } else { 
         printf("Flash memory OK\r\n");
         }
+        
     #endif
-
+    if (result != HAL_OK) return HAL_ERROR;
     result = flash_recover_write_pointer(); 
 
   #ifdef DEBUG
@@ -153,29 +154,31 @@ HAL_StatusTypeDef flash_recover_write_pointer(void)
     flash_record_count = lo;
     flash_write_addr = FLASH_LOG_START_ADDR + (lo * FLASH_RECORD_SIZE);
 
-#ifdef DEBUG
-    printf("Flash recovery: resuming at record %lu (addr 0x%06lX)\r\n",
-           flash_record_count, flash_write_addr);
-#endif
+    #ifdef DEBUG
+        printf("Flash recovery: resuming at record %lu (addr 0x%06lX)\r\n",
+            flash_record_count, flash_write_addr);
+    #endif
 
     return HAL_OK;
 }
 
+#define SECTOR_ALIGN_UP(a) (((a) + W25Q128_SECTOR_SIZE - 1) & ~(W25Q128_SECTOR_SIZE - 1))
+
 HAL_StatusTypeDef flash_prepare_log_region(uint32_t num_sectors)
 {
-    uint32_t erase_addr = (flash_write_addr % W25Q128_SECTOR_SIZE == 0)
-        ? flash_write_addr
-        : flash_write_addr - (flash_write_addr % W25Q128_SECTOR_SIZE) + W25Q128_SECTOR_SIZE;
-
     uint32_t chip_end = FLASH_LOG_START_ADDR + (FLASH_MAX_RECORDS * FLASH_RECORD_SIZE);
+    uint32_t base     = SECTOR_ALIGN_UP(flash_write_addr);
+    uint32_t target   = base + num_sectors * W25Q128_SECTOR_SIZE;
+    if (target > chip_end) target = chip_end;
 
-    for (uint32_t i = 0; i < num_sectors && erase_addr < chip_end; i++) {
+    uint32_t erase_addr = (flash_erased_through_addr > base) ? flash_erased_through_addr : base;
+
+    while (erase_addr < target) {
         HAL_StatusTypeDef ret = W25Q128_SectorErase(&flash, erase_addr);
         if (ret != HAL_OK) return ret;
         erase_addr += W25Q128_SECTOR_SIZE;
+        flash_erased_through_addr = erase_addr;
     }
-
-    flash_erased_through_addr = erase_addr;   // NEW — remember the known-clean boundary
     return HAL_OK;
 }
 
@@ -187,10 +190,10 @@ HAL_StatusTypeDef flash_prepare_log_region(uint32_t num_sectors)
       for (uint32_t addr = 0; addr < chip_end; addr += W25Q128_SECTOR_SIZE) {
           HAL_StatusTypeDef ret = W25Q128_SectorErase(&flash, addr);
           if (ret != HAL_OK) {
-  #ifdef DEBUG
-              printf("Chip erase failed at 0x%06lX\r\n", addr);
-  #endif
-              return ret;
+    #ifdef DEBUG
+        printf("Chip erase failed at 0x%06lX\r\n", addr);
+    #endif
+        return ret;
           }
       }
 

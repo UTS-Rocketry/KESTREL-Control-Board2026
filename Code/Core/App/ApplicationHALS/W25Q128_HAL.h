@@ -12,6 +12,8 @@ HAL_StatusTypeDef flash_log_packet(uint8_t *buff, uint16_t len);
 
 HAL_StatusTypeDef flash_recover_write_pointer(void);
 HAL_StatusTypeDef flash_prepare_log_region(uint32_t num_sectors);
+uint32_t flash_get_record_count(void);
+HAL_StatusTypeDef flash_full_chip_erase(void);
 
 
 #endif

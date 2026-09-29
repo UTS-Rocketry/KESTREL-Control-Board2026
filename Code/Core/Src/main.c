@@ -29,6 +29,8 @@
 #include "airbrake.h"
 #include "CAN.h"
 #include "airbrake_test.h"
+#include "W25Q128_HAL.h"
+#include "flight_log.h"
 
 /* USER CODE END Includes */
 
@@ -217,6 +219,61 @@ int main(void)
     }
   #endif
 
+  /* FLash init --------------------------------------------------------*/
+
+  static uint8_t flash_ok = 0;
+  result = flash_memory_init();
+  flash_ok = (result == HAL_OK);
+
+  #ifdef DEBUG
+    if (result != HAL_OK) {
+      printf("flash memory failed init\r\n");
+    } else { 
+      printf("Flash memory OK");
+    }
+  #endif
+
+  #ifdef MEMORY_DUMP
+
+    result = flash_recover_write_pointer();
+    #ifdef DEBUG
+      if (result != HAL_OK) {
+        printf("flash recovery failed\r\n");
+      }
+    #endif
+
+    result = flash_dump_serial();
+
+    #ifdef DEBUG
+      if (result != HAL_OK) {
+        printf("flash memory dump failed\r\n");
+      } else { 
+        printf("Flash memory OK printed reflash and power on\r\n");
+      }
+    #endif
+
+    while(1) {};
+
+    
+
+  #endif
+
+  #ifdef FLASH_ERASE_BUILD
+    
+
+    result = flash_full_chip_erase();
+      #ifdef DEBUG
+        if (result != HAL_OK) {
+          printf("Chip erase failed\r\n");
+        } else {
+          printf("Chip erase complete — safe to power off\r\n");
+        }
+      #endif
+      while(1) {};
+
+  #endif /* FLASH_ERASE_BUILD */
+
+
   servo_init();
   kalman_init();
   FSM_init();
@@ -251,8 +308,8 @@ int main(void)
   static uint32_t last_baro  = 0;
   static uint32_t last_airbrake = 0;
   static uint32_t last_hb_ms = 0;
-  static uint8_t  boost_seen = 0;
-
+  static uint32_t last_flash = 0;
+  static uint32_t last_preerase = 0;
   uint8_t dummy = 0;
  
   #ifdef DEBUG
@@ -340,14 +397,7 @@ int main(void)
 
     sensorData.flight_state = FSM_get_state();
 
-    #ifdef AIRBRAKE_TELEMETRY_LOG
-    if (!boost_seen && FSM_get_state() == STATE_BOOST) {
-        boost_seen = 1;
-        airbrake_log_zero_clock();
-    }
-    #endif
-
-    /*if (now - last_hb_ms >= 500 && FSM_get_state() <= STATE_PAD) {
+    if (now - last_hb_ms >= 500 && FSM_get_state() <= STATE_PAD) {
       last_hb_ms = now;
       HAL_StatusTypeDef can_result = can_transmit(KESTREL, HEARTBEAT_MSG, &dummy, 0);
 
@@ -357,7 +407,20 @@ int main(void)
         }
       #endif
     }
-    */
+
+    
+    /* Log at baro rate from PAD onwards */
+    if (flash_ok && now - last_flash >= 40 && FSM_get_state() >= STATE_PAD) {
+      last_flash = now;
+      (void)flight_log_record(&sensorData);
+    }
+
+    /* Keep 150 clean sectors ahead while waiting on the pad */
+    if (flash_ok && FSM_get_state() <= STATE_PAD && now - last_preerase >= 1000) {
+      last_preerase = now;
+      (void)flash_prepare_log_region(150);
+    }
+    
 
     /* USER CODE END WHILE */
 
@@ -694,6 +757,15 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
+
+  HAL_GPIO_WritePin(CSFlashmMemory_GPIO_Port, CSFlashmMemory_Pin, GPIO_PIN_SET);
+
+  GPIO_InitStruct.Pin   = CSFlashmMemory_Pin;
+  GPIO_InitStruct.Mode  = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull  = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(CSFlashmMemory_GPIO_Port, &GPIO_InitStruct);
+
 
   /* USER CODE END MX_GPIO_Init_2 */
 }

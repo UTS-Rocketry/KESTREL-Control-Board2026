@@ -85,6 +85,8 @@ void Error_Handler(void);
 #define LImitSwitchAirbrakes_GPIO_Port GPIOB
 #define LimitSwitchRoll_Pin GPIO_PIN_5
 #define LimitSwitchRoll_GPIO_Port GPIOB
+#define CSFlashmMemory_Pin        GPIO_PIN_0
+#define CSFlashmMemory_GPIO_Port  GPIOC
 
 /* USER CODE BEGIN Private defines */
 
