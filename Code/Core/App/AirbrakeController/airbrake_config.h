@@ -47,6 +47,31 @@
  */
 #define AIRBRAKE_KP                  0.005f   /* deploy fraction per metre of overshoot */
 
+/* ---- EARLY-ACTUATION BIAS ---------------------------------------------------
+ * The bisection solve in apogee_required_fraction() has no preference for
+ * *when* during coast it brakes - it just finds the constant fraction that
+ * hits the target from wherever it's asked. Airbrake drag scales with
+ * dynamic pressure (q = 0.5 * rho * v^2), so a given deployment removes far
+ * more energy early in coast (high q) than late. This bias shapes the target
+ * fed into that solve so it front-loads deployment while there's still
+ * overshoot risk, and fades on its own as that risk goes away:
+ *
+ *   overshoot_m = max(apogee_predict(s, 0) - AIRBRAKE_TARGET_APOGEE_M, 0)
+ *   phi         = clamp(q / AIRBRAKE_Q_REF, 0, 1)
+ *   bias_m      = AIRBRAKE_K_EARLY * overshoot_m * phi
+ *   effective_target = AIRBRAKE_TARGET_APOGEE_M - bias_m
+ *
+ * Self-correcting: overshoot_m is recomputed from the CURRENT state every
+ * cycle, so if the bias over-brakes, the next cycle's own overshoot_m shrinks
+ * and the bias backs off with it - not a fixed decay schedule.
+ *
+ * Tuned in sim (rocketry_weighted_bisection_controller/sims.ipynb) so
+ * mid-coast deployment settles around 0.3 for the reconstructed 5 Sep flight.
+ * Re-tune if mass, motor, or target apogee change meaningfully.
+ */
+#define AIRBRAKE_K_EARLY             1.2f      /* bias gain, dimensionless */
+#define AIRBRAKE_Q_REF               30000.0f  /* Pa, dynamic pressure reference */
+
 /* ---- DEPLOYMENT LIMITS -----------------------------------------------------
  * Safety clamps on commanded deployment. The controller output is always
  * forced into [MIN, MAX]. For a FIRST flight you may deliberately cap MAX
